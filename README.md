@@ -1,57 +1,98 @@
-# KoriX Digital Studio
+# KoriX Digital Studio — v2 Redesign
 
-Professional web design agency website built for rapid client acquisition and onboarding.
+> **Premium digital agency website** — fully animated, motion-rich, world-class.
 
-## Features
-
-- **Services & Pricing** — Website, Branding, E-Commerce, AI Services with Starter/Growth/Pro tiers
-- **Bundle Packages** — Startup Launch Pack, Restaurant Digital Pack, Full Stack Business
-- **Portfolio Section** — 3 showcase cards (ready for client mockups)
-- **Client Intake Form** — 3-step modal form (project type, timeline, budget, contact info)
-- **AI Chat Widget** — FAQ bot with lead capture and discovery call booking
-- **Team Profiles** — Kori, Atelier, Atlas, Vega
-- **Mobile Responsive** — Optimized for all devices
-- **Zero Dependencies** — Plain HTML/CSS/JS, instant load (61KB, 0.6s)
-
-## Tech Stack
-
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript
-- **Forms:** Embedded modal (no external tool required)
-- **Chat Widget:** Self-contained FAQ bot with lead capture
-- **Deployment:** Static hosting (GitHub Pages, Netlify, Vercel, or any CDN)
-
-## Customization
-
-### Update Services & Pricing
-Edit the `services` array in the HTML (search for `const services = [`).
-
-### Add Portfolio Images
-Replace placeholder images in the portfolio section with your mockups.
-
-### Connect Forms to Email
-The contact form and intake form currently log to console. Use Formspree, EmailJS, or a backend API.
-
-### Link Calendly
-Update the discovery call links (search for `calendly.com`).
-
-## Deployment
-
-### GitHub Pages
-1. Go to repo Settings → Pages
-2. Select "Deploy from a branch" → main
-3. Site will be live at `https://koriaryan1432.github.io/korix-digital-studio`
-
-### Netlify / Vercel
-1. Connect your GitHub repo
-2. Set publish directory: `.` (root)
-3. Deploy
-
-## Performance
-
-- **Size:** 61KB (single HTML file)
-- **Load Time:** 0.6s (on 4G)
-- **Lighthouse Score:** 95+ (no external dependencies)
+🌐 **Live Site:** https://static.teamily.ai/sites/5670f04f-e01a-4c3f-95dc-9323e8253179/webpages/korix-digital-studio-v2/index.html
 
 ---
 
-**Built with ❤️ by Atlas (Full-Stack Engineer)**
+## 🎨 Design
+
+- **Aesthetic:** Dark, premium, editorial — high-end creative agency
+- **Color Palette:** Deep black/charcoal base + electric gold accent
+- **Typography:** Syne (display/headings) + Space Grotesk (body)
+- **Feel:** Motion-first — every section is alive with intentional animation
+
+---
+
+## ⚡ Animation Stack
+
+| Library | Usage |
+|---|---|
+| **Three.js** | 800-particle gold WebGL field in hero, mouse-reactive parallax |
+| **Anime.js** | Hero text stagger reveal, pricing keyframes, process timeline stagger, counter animation, SVG morphing |
+| **Vanta.js** | NET effect animated background on CTA section (lazy-init via IntersectionObserver) |
+| **Vanilla-Tilt** | Parallax tilt + glare on all service, bundle, and portfolio cards |
+| **Zdog** | 4 pseudo-3D spinning decorative icons (diamond, cube, star, ring) |
+
+---
+
+## 🏗️ Page Sections
+
+1. **Nav** — Sticky, blur-on-scroll, animated gold pulse logo dot, CTA button
+2. **Hero** — Full-viewport Three.js particle field + Anime.js staggered headline reveal + SVG morph decoration
+3. **Marquee Strip** — Infinite CSS marquee with 12 service/tech items, pauses on hover
+4. **Services** — 4 Bento-style cards with Vanilla-Tilt (glare), CSS spotlight follow, Anime.js pricing tier reveal
+5. **Bundles** — 3 package cards with Vanilla-Tilt, spotlight, animated conic-gradient border on featured card
+6. **Portfolio** — 3 blur-fade reveal cards with Vanilla-Tilt, coming-soon badges
+7. **Zdog Strip** — 4 pseudo-3D animated icons spinning continuously
+8. **Process** — 4-step timeline with Anime.js stagger animation on scroll
+9. **Stats** — Anime.js counter animation (48h, 4 services, 100%, 24/7) triggered on scroll
+10. **CTA + Form** — Vanta.js NET effect background, full contact form with shimmer submit button
+11. **Footer** — Clean 4-column layout with social links
+
+---
+
+## 📦 Services & Pricing
+
+### Core Services
+| Service | Starter | Growth | Pro |
+|---|---|---|---|
+| Website Design | $499 | $999 | $1,999 |
+| Branding | $299 | $599 | $999 |
+| E-Commerce | $799 | $1,499 | $2,999 |
+| AI Services | $499 | $799 | $1,999 |
+
+### Bundle Packages
+| Bundle | Price |
+|---|---|
+| Startup Launch Pack (Website + Branding + AI Chat) | $1,799 |
+| Restaurant Digital Pack (Website + Menu + Booking + Branding) | $1,299 |
+| Full Stack Business (All 4 services, fully integrated) | $5,999 |
+
+---
+
+## 🔧 Technical
+
+- **Single HTML file** — all JS/CSS inline or via CDN. Zero build step.
+- **CDN imports:** Three.js r128, Anime.js 3.2.1, Vanta.js 0.5.24, Vanilla-Tilt 1.8.1, Zdog 1.1.2
+- **Fonts:** Google Fonts — Syne (display) + Space Grotesk (body)
+- **Performance:** Lazy-init Three.js + Vanta.js via IntersectionObserver, requestAnimationFrame loops
+- **Responsive:** Mobile-first, animations degrade gracefully on small screens
+- **File size:** ~59KB
+
+---
+
+## 🚀 Deploy
+
+This is a static single-file site. To deploy:
+
+```bash
+# Clone the repo
+git clone https://github.com/koriaryan1432/korix-digital-studio.git
+cd korix-digital-studio
+
+# Open locally
+open index.html
+
+# Or serve with any static host (Netlify, Vercel, GitHub Pages, etc.)
+```
+
+---
+
+## 📬 Contact
+
+**KoriX Digital Studio** — We Build Digital Experiences That Convert.
+
+- ✦ Now Accepting International Clients
+- 48h Avg Response · 4 Core Services · AI Powered · 🌍 International Clients
